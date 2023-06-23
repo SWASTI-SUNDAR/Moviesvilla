@@ -5,7 +5,7 @@ Herobanner
 const Home = () => {
   return (
     <div className='homepage'>
-      
+      <Herobanner/>
     </div>
   )
 }

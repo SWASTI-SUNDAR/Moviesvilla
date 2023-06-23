@@ -3,7 +3,7 @@ import "./style.scss"
 const searchResult = () => {
   return (
     <div>
-      
+      hey
     </div>
   )
 }
