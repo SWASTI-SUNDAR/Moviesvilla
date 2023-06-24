@@ -2,8 +2,7 @@ import axios from "axios"
 const BASE_URL="https://api.themoviedb.org/3"
 // const TMBD_TOKEN=import.meta.env.
 // VITE_APP_TMBD_TOKEN;
-const TMBD_TOKEN="eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MmQ3ODExNjhjMjNlNDU1ZGYzZGNkZDczOWI2Y2QwNiIsInN1YiI6IjY0OTM1MTVmY2ZlNDhmMDEzYWMyMzc5NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ObJkeanHmlkWwRWNTrRq6ZeqdPBhIL8JMojQp_UyqBc"; 
-
+const TMBD_TOKEN="eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjODQ5N2QzMDRkNGM2YWRlMmMwYmIzZDM1ZWI3NWZiZiIsInN1YiI6IjY0OTNlYTYzYWY2ZTk0MDEwNmY5ZWY3MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.InhPaJxmapkYMQoRHiIdjLhdNcHDH9yXaOPM1MC1pqQ"; 
 const headers={
     Authorization: "Bearer " +
     TMBD_TOKEN,

@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import "./style.scss"
 import useFetch from '../../../useFetch';
 import { useSelector } from 'react-redux';
-import ContentWrapper from "../../../components/contentwarpper/contentWrapper"
 import Img from "../../../components/lazyloading/Img"
+import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
 const Herobanner = () => {
   const [background, setBackground] = useState("");
 
@@ -18,42 +18,40 @@ const Herobanner = () => {
     const bg = url.backdrop + data?.results[Math.floor(Math.random() * 20)]?.backdrop_path
     setBackground(bg);
   }, [data])
-  const searchHandeler = (event) => {
+  const searchQueryHandler = (event) => {
     if (event.key === "Enter" && query.length > 0) {
       navigate(`/search/${query}`)
     }
   }
   return (
-    <div>
       <div className="heroBanner">
         {!loading &&
-          <div className="backdrop_img">
+          <div className="backdrop-img">
             <Img src={background} />
           </div>
         }
-        <div className="opacity-layer">
-
-          <ContentWrapper>
-            <div className="heroBannerContent">
-              <span className='title'>Welcome.</span>
-              <span className='subTitle'>
-                Millions of movies, TV shows and people to discover.
-                Explore now.
-              </span>
-              <div className="searchInput">
-                <input type="text"
-                  onKeyUp={searchHandeler}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder='Search for a movie or tv show'
-                />
-                <button>Search</button>
-              </div>
-            </div>
-          </ContentWrapper>
-        </div>
+         <div className="opacity-layer">
+         </div>
+         <ContentWrapper>
+         <div className="heroBannerContent">
+             <span className="title">Welcome.</span>
+             <span className="subTitle">
+                 Millions of movies, TV shows and people to discover.
+                 Explore now.
+             </span>
+             <div className="searchInput">
+                 <input
+                     type="text"
+                     placeholder="Search for a movie or tv show...."
+                     onChange={(e) => setQuery(e.target.value)}
+                     onKeyUp={searchQueryHandler}
+                 />
+                 <button>Search</button>
+             </div>
+         </div>
+     </ContentWrapper>
       </div>
-    </div>
   )
 }
 
-export default Herobanner
+export default Herobanner;

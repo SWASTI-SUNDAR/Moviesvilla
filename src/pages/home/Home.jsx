@@ -1,11 +1,12 @@
 import React from 'react'
 import "./style.scss"
 import Herobanner from './Herobanner/Herobanner'
-Herobanner
 const Home = () => {
   return (
     <div className='homepage'>
-      <Herobanner/>
+     <Herobanner/>
+     <div style={{height:"1000px"}}>
+     </div>
     </div>
   )
 }
