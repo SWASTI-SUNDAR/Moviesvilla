@@ -9,7 +9,9 @@ import Footer from './components/footer/Footer'
 import Details from './pages/deatils/Details'
 import Erorr from './pages/404/Erorr'
 import Home from './pages/home/Home'
-import searchResult from './pages/searchResult/searchResult'
+// import SearchResult from './pages/searchResult/SearchResult'
+// import SearchResult from './pages/searchResult/SearchResult'
+import SearchResult from './pages/searchResult/SearchResult'
 import Explore from './pages/explore/Explore'
 import { all } from 'axios'
  
@@ -57,7 +59,7 @@ function App() {
    <Route path='/' element={<Home/>}/>
    <Route path='/:mediaType/:id' element={<Details/>}/>
    <Route path='/explore/:mediaType' element={<Explore/>}/>
-   <Route path='/search/query' element={<searchResult/>}/>
+   <Route path='/search/:query' element={<SearchResult/>}/>
    <Route path='*' element={<Erorr/>}/>
   </Routes>
   <Footer/>
