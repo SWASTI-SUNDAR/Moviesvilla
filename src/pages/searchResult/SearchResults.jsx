@@ -3,11 +3,11 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import {fetchDataFromApi} from"../../utils/api"
 import MovieCard from "../../components/movieCard/MovieCard"
 import ContentWrapper from "../../components/contentwrapper/ContentWrapper";
-import noResults from "../../assets/no-results.png"
+// import noResults from "../../assets/no-results.png"
 import "./style.scss"
 import { useParams } from 'react-router-dom'
 import Spinner from '../../components/spinner/Spinner'
-const SearchResult = () => {
+const SearchResults = () => {
   const [data,setData]= useState(null);
   const [pageNum,setPageNum]=useState(1);
   const [loading,setLoading]=useState(false);
@@ -89,4 +89,4 @@ return (
 );
 };
 
-export default SearchResult
+export default SearchResults
