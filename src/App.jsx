@@ -11,7 +11,7 @@ import Erorr from './pages/404/Erorr'
 import Home from './pages/home/Home'
 // import SearchResult from './pages/searchResult/SearchResult'
 // import SearchResult from './pages/searchResult/SearchResult'
-import SearchResult from './pages/searchResult/SearchResult'
+import SearchResult from './pages/SearchResult/SearchResult'
 import Explore from './pages/explore/Explore'
 import { all } from 'axios'
  
