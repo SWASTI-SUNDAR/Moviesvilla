@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import {fetchDataFromApi} from"../../utils/api"
 import MovieCard from "../../components/movieCard/MovieCard"
-import ContentWrapper from "../../components/contentwrapper/ContentWrapper";
-// import noResults from "../../assets/no-results.png"
+import ContentWrapper from '../../components/contentWrapper/ContentWrapper'
 import "./style.scss"
 import { useParams } from 'react-router-dom'
 import Spinner from '../../components/spinner/Spinner'
